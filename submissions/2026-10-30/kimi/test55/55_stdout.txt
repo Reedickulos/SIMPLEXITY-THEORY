@@ -1,0 +1,55 @@
+{
+  "test": 55,
+  "audit_exposure": "exposed reproduction; not an independent cross-audit",
+  "dimensional_origin": "intrinsic eight-dimensional 240-root realization",
+  "counts": {
+    "roots": 240,
+    "inner": 120,
+    "outer": 120,
+    "pairs": 120
+  },
+  "J_squared_is_identity": true,
+  "partner_relation_values": [
+    0
+  ],
+  "max_forward_sectorA_residual": 2.4061460551742903e-15,
+  "max_reverse_sectorB_residual": 1.815937238660729e-15,
+  "gram_discrepancy_counts": {
+    "-1": 5760,
+    "0": 46080,
+    "1": 5760
+  },
+  "joint_KH_per_inner_row": {
+    "(-2,0)": 1,
+    "(-1,0)": 20,
+    "(-1,1)": 12,
+    "(0,-1)": 12,
+    "(0,0)": 30,
+    "(0,1)": 12,
+    "(1,-1)": 12,
+    "(1,0)": 20,
+    "(2,0)": 1
+  },
+  "commutation_disagreements": {
+    "coxeter_c": 0,
+    "coxeter_c10": 0,
+    "simple_reflections": [
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180
+    ]
+  },
+  "gram_sha256": "cd9ac7a153e6fc00fd80f12258b1a6f7b2b5d75b81398b2c487f31c52b884432",
+  "J_sha256": "be050c258f3e2ad4a6ea52f1914e768142281f17b6b1bdef91e79f0e37727329",
+  "notes": [
+    "J is a two-way matching, not the forward linear sector-scaling map L.",
+    "J is not a Gram automorphism; Gram preservation was not an acceptance condition.",
+    "Commutation with c or c^10 does not establish a triality correspondence.",
+    "This is a reconstructed-realization reproduction, not index reconciliation with cycle-0 certificate data."
+  ]
+}
