@@ -1,0 +1,87 @@
+{
+  "manifest_version": 3,
+  "name": "Simplexity Theory — Sovereign AI Council Bridge",
+  "version": "1.0.0",
+  "description": "Zero-API-cost conjoined workspace & sovereign bridge connecting Simplexity Theory with ChatGPT, Claude, Grok, Gemini, DeepSeek, and Kimi.",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage",
+    "tabGroups",
+    "sidePanel",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://claude.ai/*",
+    "https://x.com/*",
+    "https://grok.com/*",
+    "https://gemini.google.com/*",
+    "https://chat.deepseek.com/*",
+    "https://kimi.moonshot.cn/*",
+    "https://notebooklm.google.com/*",
+    "https://*.run.app/*",
+    "http://localhost/*",
+    "http://localhost:*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Simplexity Theory Sovereign Bridge"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.run.app/*",
+        "http://localhost/*",
+        "http://localhost:*/*"
+      ],
+      "js": ["content-bridge.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content-chatgpt.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content-claude.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://x.com/*", "https://grok.com/*"],
+      "js": ["content-grok.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["content-gemini.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://chat.deepseek.com/*"],
+      "js": ["content-deepseek.js"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://kimi.moonshot.cn/*"],
+      "js": ["content-kimi.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
