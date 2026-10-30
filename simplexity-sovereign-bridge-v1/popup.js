@@ -1,0 +1,1 @@
+document.getElementById('lBtn').onclick=()=>{chrome.runtime.sendMessage({type:'LAUNCH_CONJOINED_WINDOW'});window.close();};document.getElementById('cBtn').onclick=()=>{chrome.tabs.create({url:'https://ais-dev-spflrvi65qt72mjztsxbwd-26305069216.us-west1.run.app'});window.close();};

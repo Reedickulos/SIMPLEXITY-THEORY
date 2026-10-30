@@ -1,0 +1,18 @@
+{
+  "name": "CORELAB - Powered by SEMA",
+  "short_name": "CORELAB",
+  "description": "Engage simultaneously with custom AI agents and models in CORELAB powered by SEMA (Sovereign Epistemic Memory Architecture) on an immutable log ledger.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/yYMFZwvZ/grok-image-074afe21-b22f-4aa1-9e15-6cb0a181c49d.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

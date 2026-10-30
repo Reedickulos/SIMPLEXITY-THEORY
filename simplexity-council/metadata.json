@@ -1,0 +1,8 @@
+{
+  "name": "Simplexity Council",
+  "description": "This will be a live real time most likely browser extension that will facilitate without using API calling a communication or a collaboration space for Gemini Rock Chachi PT Claude and deep seek the conceptual idea right now is to just have a mechanism that will take the transmitted text from each one of those browser tabs rip the information correlated into a chronological ledger allow for a ledger to be then repeated back with the inclusions of the other models responses etc etc etc",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

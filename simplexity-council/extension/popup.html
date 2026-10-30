@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simplexity Sovereign Bridge</title>
+  <style>
+    body {
+      width: 320px;
+      margin: 0;
+      padding: 16px;
+      background: #04060a;
+      color: #f1f5f9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 13px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid rgba(230,200,117,0.3);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    .title {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #e6c875;
+    }
+    .subtitle {
+      font-size: 11px;
+      color: #94a3b8;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      background: rgba(230,200,117,0.12);
+      border: 1px solid #e6c875;
+      color: #e6c875;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.15s ease;
+    }
+    .btn:hover {
+      background: rgba(230,200,117,0.25);
+    }
+    .btn-cyan {
+      background: rgba(0,243,255,0.12);
+      border-color: #00f3ff;
+      color: #00f3ff;
+    }
+    .btn-cyan:hover {
+      background: rgba(0,243,255,0.25);
+    }
+    .platforms {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+    .plat-badge {
+      padding: 6px 8px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11px;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #475569;
+    }
+    .dot.active {
+      background: #10b981;
+      box-shadow: 0 0 6px #10b981;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="title">SIMPLEXITY BRIDGE</div>
+      <div class="subtitle">Conjoined Sovereign AI Deck</div>
+    </div>
+  </div>
+
+  <button class="btn btn-cyan" id="launchConjoinedBtn">
+    🚀 Launch Conjoined Window
+  </button>
+  <button class="btn" id="openCockpitBtn">
+    🏛️ Open Simplexity Cockpit
+  </button>
+
+  <div style="font-weight: 600; font-size: 11px; color: #94a3b8; margin-top: 12px;">SOVEREIGN TABS:</div>
+  <div class="platforms" id="platformList">
+    <div class="plat-badge">ChatGPT <span class="dot" id="dot-chatgpt"></span></div>
+    <div class="plat-badge">Claude <span class="dot" id="dot-claude"></span></div>
+    <div class="plat-badge">Grok <span class="dot" id="dot-grok"></span></div>
+    <div class="plat-badge">Gemini <span class="dot" id="dot-gemini"></span></div>
+    <div class="plat-badge">DeepSeek <span class="dot" id="dot-deepseek"></span></div>
+    <div class="plat-badge">Kimi <span class="dot" id="dot-kimi"></span></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
